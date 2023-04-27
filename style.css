@@ -24,6 +24,7 @@ h1{
 @media only screen and ( max-width: 770px) {
     nav{
         height: 4em;
+        
     }
 
     h1{
