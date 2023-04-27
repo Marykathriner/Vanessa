@@ -1,8 +1,3 @@
-/* body{
-    background-image: url(img/background-inked-mariposa.jpg);
-    background-position: 0%;
-} */
-
 .background-img{
     height: 120%;
     object-fit: cover;
@@ -13,7 +8,7 @@
     will-change: transform;
 }
 
-h1{
+.heading{
     text-align: center;
     font-family: "sheila", sans-serif;
     font-weight: 800;
@@ -21,56 +16,73 @@ h1{
     color: beige;
 }
 
-@media only screen and ( max-width: 770px) {
-    nav{
-        height: 4em;
+.container {
+    box-sizing: content-box;
+    display: flex;
+    flex-wrap: wrap;
+}
 
-    }
+.row{
+    display: flex;
+    width: 100%;
+    margin: 0.75% 10%;
+}
 
-    h1{
+.col{
+    width: 33.33333333%;
+    display: flex;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    justify-content: center;
+
+}
+
+.gallery-img {
+    max-width: 80%;
+}
+
+.center-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    bottom: 10%;
+    position: absolute;
+}
+
+.center-button{
+    width: 60%;
+}
+
+@media only screen and (max-width: 770px) {
+    .heading{
+        text-align: center;
         font-size: 2.5em;
+        margin: 0 0 2% 0;
     }
-
-    .wrapper{
+    
+    .container {
         box-sizing: content-box;
         display: flex;
         flex-wrap: wrap;
     }
-
+    
     .row{
         display: flex;
         width: 100%;
         margin: 0.75% 10%;
     }
     
-    .col {
-        width: 25%;
+    .col{
+        width: 33.33333333%;
         display: flex;
         padding-top: 0.75rem;
         padding-bottom: 0.75rem;
         justify-content: center;
     
     }
-
-    .round-button{
-        max-width: 60%;
+    
+    .gallery-img {
+        max-width: 80%;
     }
-
-    .center-wrapper{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        bottom: 10%;
-        position: absolute;
-    }
-
-    .center-button{
-        width: 60%;
-    }
-
-}
-
-
-@media only screen and ( max-width: 480px) {
-
+    
 }
