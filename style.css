@@ -39,6 +39,7 @@
 
 .gallery-img {
     max-width: 80%;
+    opacity: 80%;
 }
 
 .center-wrapper{
@@ -51,7 +52,9 @@
 
 .center-button{
     width: 60%;
+    opacity: 80%;
 }
+
 
 @media only screen and (max-width: 770px) {
     .heading{
