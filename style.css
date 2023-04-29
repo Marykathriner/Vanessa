@@ -1,23 +1,15 @@
 html, body {
-    background-image: url(img/background-inked-mariposa.jpg);
+    background-image: url(img/vanessa-website-background-2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
-    margin: 0; height: 100%; 
+    margin: 0; 
+    height: 100%; 
     overflow: hidden
 }
 
-/* .background-img{
-    height: 120%;
-    object-fit: cover;
-    position: absolute;
-    top: 0px;
-    z-index: -1;
-    left: -24%;
-    will-change: transform;
-} */
-
 .heading{
+    font-size: 2.2em;
     text-align: center;
     font-family: "sheila", sans-serif;
     font-weight: 800;
@@ -56,9 +48,12 @@ html, body {
     display: flex;
     bottom: 10%;
     position: absolute;
-    flex-direction: column;
-    align-content: center;
     flex-wrap: wrap;
+}
+
+.col-center{
+    display: flex;
+    justify-content: center;
 }
 
 .center-button{
@@ -67,37 +62,12 @@ html, body {
     margin: 5% 0 0 0;
 }
 
+a{
+    display: contents;
+}
 
-/* @media only screen and (max-width: 770px) {
-    .heading{
-        text-align: center;
-        font-size: 2.5em;
-        margin: 0 0 2% 0;
-    }
+
+@media only screen and (max-width: 770px) {
+
     
-    .container {
-        box-sizing: content-box;
-        display: flex;
-        flex-wrap: wrap;
-    }
-    
-    .row{
-        display: flex;
-        width: 100%;
-        margin: 0.75% 10%;
-    }
-    
-    .col{
-        width: 33.33333333%;
-        display: flex;
-        padding-top: 0.75rem;
-        padding-bottom: 0.75rem;
-        justify-content: center;
-    
-    }
-    
-    .gallery-img {
-        max-width: 80%;
-    }
-    
-} */
+}
