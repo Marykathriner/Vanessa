@@ -1,9 +1,13 @@
 html, body {
+    background-image: url(img/background-inked-mariposa.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
     margin: 0; height: 100%; 
     overflow: hidden
 }
 
-.background-img{
+/* .background-img{
     height: 120%;
     object-fit: cover;
     position: absolute;
@@ -11,7 +15,7 @@ html, body {
     z-index: -1;
     left: -24%;
     will-change: transform;
-}
+} */
 
 .heading{
     text-align: center;
@@ -50,16 +54,17 @@ html, body {
 .center-wrapper{
     width: 100%;
     display: flex;
-    justify-content: center;
     bottom: 10%;
     position: absolute;
     flex-direction: column;
-    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
 }
 
 .center-button{
     width: 40%;
     opacity: 80%;
+    margin: 5% 0 0 0;
 }
 
 
