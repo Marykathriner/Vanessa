@@ -1,5 +1,5 @@
 html, body {
-    background-image: url(img/vanessa-website-background-2.jpg);
+    background-image: url(img/vanessa-website-background-edited-1080x1920.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
@@ -9,9 +9,9 @@ html, body {
 }
 
 .heading{
-    margin: 4% 0 2% 0;
-    font-size: 2.2em;
-    text-align: center;
+    margin: 3% 22% 1% 0;
+    font-size: 4em;
+    text-align: right;
     font-family: "sheila", sans-serif;
     font-weight: 800;
     font-style: normal;
@@ -22,12 +22,13 @@ html, body {
     box-sizing: content-box;
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-end;
 }
 
 .row{
     display: flex;
-    width: 100%;
-    margin: 0.75% 10%;
+    width: 25%;
+    margin: 0.75% 22%;
 }
 
 .col{
@@ -45,16 +46,16 @@ html, body {
 }
 
 .center-wrapper{
-    width: 100%;
     display: flex;
-    bottom: 10%;
-    position: absolute;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
 .col-center{
     display: flex;
-    justify-content: center;
+    width: 43%;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
 .center-button{
@@ -67,8 +68,77 @@ a{
     display: contents;
 }
 
+@media only screen and (max-width: 650px) {
 
-@media only screen and (max-width: 770px) {
-
+    html, body {
+        background-image: url(img/vanessa-website-background-2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+        margin: 0; 
+        height: 100%; 
+        overflow: hidden
+    }
     
+    .heading{
+        margin: 4% 0 2% 0;
+        font-size: 2.2em;
+        text-align: center;
+        font-family: "sheila", sans-serif;
+        font-weight: 800;
+        font-style: normal;
+        color: beige;
+    }
+    
+    .container {
+        box-sizing: content-box;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .row{
+        display: flex;
+        width: 100%;
+        margin: 0.75% 10%;
+    }
+    
+    .col{
+        width: 33.33333333%;
+        display: flex;
+        padding-top: 0.75rem;
+        padding-bottom: 0.75rem;
+        justify-content: center;
+    
+    }
+    
+    .gallery-img {
+        max-width: 80%;
+        opacity: 80%;
+    }
+    
+    .center-wrapper{
+        width: 100%;
+        display: flex;
+        bottom: 10%;
+        position: absolute;
+        flex-wrap: wrap;
+    }
+    
+    .col-center{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .center-button{
+        width: 40%;
+        opacity: 80%;
+        margin: 5% 0 0 0;
+    }
+    
+    a{
+        display: contents;
+    }
+    
+
 }
